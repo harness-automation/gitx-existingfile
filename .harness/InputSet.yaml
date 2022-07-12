@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "InputSet"
+  name: "InputSet"
+  orgIdentifier: "GitXorg"
+  projectIdentifier: "ExistingPipeLineNdInputSet"
+  pipeline:
+    identifier: "githubExistingPipeline"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.AutomationPlatform"
