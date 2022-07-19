@@ -1,0 +1,21 @@
+inputSet:
+  identifier: importApiInputSet1
+  name: importApiInputSet1
+  orgIdentifier: GitXOrg
+  projectIdentifier: import_API_automation
+  pipeline:
+    identifier: importApiAutomationPipeline
+    stages:
+    - stage:
+        identifier: "A3"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "A4"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.viewer"
