@@ -1,0 +1,10 @@
+overlayInputSet:
+  name: importUiOverlayInputSet2
+  identifier: over - importUiOverlayInputSet2
+  orgIdentifier: GitXOrg
+  projectIdentifier: import_UI_automation
+  pipelineIdentifier: importUiAutomationPipeline
+  inputSetReferences:
+    - importUiInputSet2
+    - importUiInputSet3
+  tags: {}
