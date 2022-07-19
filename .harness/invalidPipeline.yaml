@@ -1,6 +1,6 @@
 pipeline:
-    name: importUiAutomationPipeline
-    identifier: importUiAutomationPipeline
+    name: invalidPipeline
+    identifier: invalidPipeline
     projectIdentifier: import_UI_automation
     orgIdentifier: GitXOrg
     tags: {}
