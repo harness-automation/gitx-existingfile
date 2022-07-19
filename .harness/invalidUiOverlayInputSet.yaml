@@ -1,0 +1,8 @@
+overlayInputSet:
+  name: invalidUiOverlayInputSet
+  identifier: invalidUiOverlayInputSet
+  orgIdentifier: GitXOrg
+  inputSetReferences:
+    - importUiInputSet1
+    - importUiInputSet2
+  tags: {}
