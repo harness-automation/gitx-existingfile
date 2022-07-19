@@ -1,6 +1,6 @@
 inputSet:
-  identifier: invalidInputSet
-  name: invalidInputSet
+  identifier: invalidUiInputSet
+  name: invalidUiInputSet
   orgIdentifier: GitXOrg
   projectIdentifier: import_UI_automation
   pipeline:
