@@ -1,0 +1,45 @@
+pipeline:
+    name: importApiAutomationPipeline
+    identifier: importApiAutomationPipeline
+    projectIdentifier: import_API_automation
+    orgIdentifier: GitXOrg
+    tags: {}
+    stages:
+        - stage:
+              name: A1
+              identifier: A1
+              description: new pipeline Gitx
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: R1
+                                identifier: R1
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: <+input>
+                                        disallowPipelineExecutor: false
+                                        userGroups: <+input>
+                                    approverInputs: []
+                                when:
+                                    stageStatus: All
+                                failureStrategies:
+                                    - onFailure:
+                                          errors:
+                                              - AllErrors
+                                          action:
+                                              type: MarkAsSuccess
+              tags: {}
+              failureStrategies:
+                  - onFailure:
+                        errors:
+                            - AllErrors
+                        action:
+                            type: MarkAsSuccess
