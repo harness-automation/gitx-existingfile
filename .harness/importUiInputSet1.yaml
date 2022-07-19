@@ -1,0 +1,21 @@
+inputSet:
+  identifier: importUiInputSet1
+  name: importUiInputSet1
+  orgIdentifier: GitXOrg
+  projectIdentifier: import_UI_automation
+  pipeline:
+    identifier: importUiAutomationPipeline
+    stages:
+    - stage:
+        identifier: "A3"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "A4"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.viewer"
