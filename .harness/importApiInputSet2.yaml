@@ -1,19 +1,19 @@
 inputSet:
-  identifier: importApiInputSet1
-  name: importApiInputSet1
+  identifier: importApiInputSet2
+  name: importApiInputSet2
   orgIdentifier: GitXOrg
   projectIdentifier: import_API_automation
   pipeline:
     identifier: importApiAutomationPipeline
     stages:
     - stage:
-        identifier: "A3"
+        identifier: "A1"
         type: "Approval"
         spec:
           execution:
             steps:
             - step:
-                identifier: "A4"
+                identifier: R1
                 type: "HarnessApproval"
                 spec:
                   approvers:
