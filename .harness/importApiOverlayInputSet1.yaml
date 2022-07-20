@@ -1,10 +1,10 @@
 overlayInputSet:
-  name: importApiOverlayInputSet1
-  identifier: importApiOverlayInputSet1
-  orgIdentifier: GitXOrg
-  projectIdentifier: import_API_automation
-  pipelineIdentifier: importApiAutomationPipeline
-  inputSetReferences:
-    - importApiInputSet1
-    - importApiInputSet2
-  tags: {}
+    name: importApiOverlayInputSet1
+    tags: {}
+    identifier: importApiOverlayInputSet1
+    orgIdentifier: GitXOrg
+    projectIdentifier: import_API_automation
+    pipelineIdentifier: importApiAutomationPipeline
+    inputSetReferences:
+        - importApiInputSet1
+        - importApiInputSet2
