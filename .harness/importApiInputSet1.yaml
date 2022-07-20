@@ -19,4 +19,4 @@ inputSet:
                 spec:
                   approvers:
                     userGroups:
-                    - "account.viewer"
+                    - "account.PLQE"
