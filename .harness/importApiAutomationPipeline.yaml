@@ -8,7 +8,7 @@ pipeline:
         - stage:
               name: A1
               identifier: A1
-              description: new pipeline Gitx
+              description: new pipeline Gitx 2.0
               type: Approval
               spec:
                   execution:
@@ -22,6 +22,7 @@ pipeline:
                                     approvalMessage: |-
                                         Please review the following information
                                         and approve the pipeline
+                                        progress
                                     includePipelineExecutionHistory: true
                                     approvers:
                                         minimumCount: <+input>
