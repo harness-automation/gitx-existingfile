@@ -3,7 +3,6 @@ pipeline:
     identifier: importApiAutomationPipeline
     projectIdentifier: import_API_automation
     orgIdentifier: GitXOrg
-    tags: {}
     stages:
         - stage:
               name: A1
@@ -21,8 +20,7 @@ pipeline:
                                 spec:
                                     approvalMessage: |-
                                         Please review the following information
-                                        and approve the pipeline
-                                        progress
+                                        and approve the pipeline progress
                                     includePipelineExecutionHistory: true
                                     approvers:
                                         minimumCount: <+input>
