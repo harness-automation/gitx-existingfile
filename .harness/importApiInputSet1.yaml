@@ -1,7 +1,7 @@
 inputSet:
   identifier: "importApiInputSet1"
   name: "importApiInputSet1"
-  orgIdentifier: "GitXOrg"
+  orgIdentifier: "GitXOrg12"
   projectIdentifier: "import_API_automation"
   pipeline:
     identifier: "importApiAutomationPipeline"
