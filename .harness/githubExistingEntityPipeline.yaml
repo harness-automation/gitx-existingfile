@@ -26,7 +26,6 @@ pipeline:
                                     approvers:
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                        userGroups:
-                                            - account.PLQE
+                                        userGroups: <+input>
                                     approverInputs: []
               tags: {}
