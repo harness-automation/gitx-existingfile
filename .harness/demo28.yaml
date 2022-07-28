@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "demo28"
+  name: "demo28"
+  orgIdentifier: "GitXOrg"
+  projectIdentifier: "import_API_automation"
+  pipeline:
+    identifier: "importApiAutomationPipeline"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "R1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"
