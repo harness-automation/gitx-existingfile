@@ -6,5 +6,4 @@ overlayInputSet:
   pipelineIdentifier: importApiAutomationPipeline
   inputSetReferences:
     - importApiInputSet2
-    - importApiInputSet3
   tags: {}
