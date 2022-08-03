@@ -1,8 +1,8 @@
 pipeline:
     name: prodCheckImport
     identifier: prodCheckImport
-    projectIdentifier: Simlified_Git_sync
-    orgIdentifier: SimplifiedGitSync_Do_Not_Delete
+    projectIdentifier: SimplifiedGitSync_Do_Not_Delete 
+    orgIdentifier: Simlified_Git_sync
     stages:
         - stage:
               name: A1
