@@ -1,0 +1,44 @@
+pipeline:
+    name: prodCheckImport
+    identifier: prodCheckImport
+    projectIdentifier: Simlified_Git_sync
+    orgIdentifier: SimplifiedGitSync_Do_Not_Delete
+    stages:
+        - stage:
+              name: A1
+              identifier: A1
+              description: new pipeline Gitx 2.0
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: R1
+                                identifier: R1
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progress
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: <+input>
+                                        disallowPipelineExecutor: false
+                                        userGroups: <+input>
+                                    approverInputs: []
+                                when:
+                                    stageStatus: All
+                                failureStrategies:
+                                    - onFailure:
+                                          errors:
+                                              - AllErrors
+                                          action:
+                                              type: MarkAsSuccess
+              tags: {}
+              failureStrategies:
+                  - onFailure:
+                        errors:
+                            - AllErrors
+                        action:
+                            type: MarkAsSuccess
