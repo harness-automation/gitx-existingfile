@@ -14,8 +14,8 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: R1
-                  identifier: R1
+                  name: Q1
+                  identifier: Q1
                   type: HarnessApproval
                   timeout: 1d
                   spec:
