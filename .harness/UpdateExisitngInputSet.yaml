@@ -1,6 +1,7 @@
 inputSet:
   identifier: "UpdateExisitngInputSet"
   name: "UpdateExisitngInputSet"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "ExistingPipeLineNdInputSet"
   pipeline:
