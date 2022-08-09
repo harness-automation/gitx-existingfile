@@ -18,5 +18,6 @@ inputSet:
                 type: "HarnessApproval"
                 spec:
                   approvers:
+                    minimumCount: 1
                     userGroups:
                     - "account.PLQE"
