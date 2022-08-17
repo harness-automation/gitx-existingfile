@@ -1,5 +1,5 @@
 pipeline:
-  name: forceImportPipeline23
+  name: forceImportPipeline
   identifier: forceImportPipeline
   projectIdentifier: Force_Import_Test
   orgIdentifier: GitXOrg
