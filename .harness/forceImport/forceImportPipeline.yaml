@@ -1,6 +1,6 @@
 pipeline:
-  name: forceImport
-  identifier: forceImport
+  name: forceImportPipeline
+  identifier: forceImportPipeline
   projectIdentifier: demoForce
   orgIdentifier: GitXOrg
   tags: {}
