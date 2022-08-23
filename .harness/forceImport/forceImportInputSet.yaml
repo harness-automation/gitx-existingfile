@@ -4,7 +4,7 @@ inputSet:
   orgIdentifier: "GitXOrg"
   projectIdentifier: "Force_Import_Test"
   pipeline:
-    identifier: "githubExistingEntityPipeline"
+    identifier: "forceImport"
     stages:
     - stage:
         identifier: "A1"
