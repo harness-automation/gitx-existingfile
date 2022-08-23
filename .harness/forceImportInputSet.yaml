@@ -1,10 +1,10 @@
 inputSet:
-  identifier: "githubExistingEntityInputSet"
-  name: "githubExistingEntityInputSet"
+  identifier: "forceImportInputSet"
+  name: "forceImportInputSet"
   orgIdentifier: "GitXOrg"
   projectIdentifier: "import_API_automation"
   pipeline:
-    identifier: "githubExistingEntityPipeline"
+    identifier: "forceImport"
     stages:
     - stage:
         identifier: "A1"
