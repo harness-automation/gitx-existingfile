@@ -1,6 +1,6 @@
 pipeline:
-  name: forceImportPipeline
-  identifier: forceImportPipeline
+  name: forceImport
+  identifier: forceImport
   projectIdentifier: import_API_automation #changed
   orgIdentifier: GitXOrg
   tags: {}
