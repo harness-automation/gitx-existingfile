@@ -1,8 +1,8 @@
 inputSet:
   identifier: "githubExistingEntityInputSet"
   name: "githubExistingEntityInputSet"
-  orgIdentifier: "default"
-  projectIdentifier: "Existing_Entity_for_import_and_update"
+  orgIdentifier: "GitXOrg"
+  projectIdentifier: "import_API_automation"
   pipeline:
     identifier: "githubExistingEntityPipeline"
     stages:
