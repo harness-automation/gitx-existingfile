@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "githubExistingEntityInputSet"
+  name: "githubExistingEntityInputSet"
+  orgIdentifier: "GitXOrg"
+  projectIdentifier: "Force_Import_Test"
+  pipeline:
+    identifier: "githubExistingEntityPipeline"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"
