@@ -1,6 +1,6 @@
 inputSet:
-  identifier: "githubExistingEntityInputSet"
-  name: "githubExistingEntityInputSet"
+  identifier: "forceImportInputSet"
+  name: "forceImportInputSet"
   orgIdentifier: "GitXOrg"
   projectIdentifier: "Force_Import_Test"
   pipeline:
