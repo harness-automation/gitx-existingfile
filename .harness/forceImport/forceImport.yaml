@@ -1,7 +1,7 @@
 pipeline:
   name: forceImport
   identifier: forceImport
-  projectIdentifier: import_API_automation
+  projectIdentifier: Force_Import_Test
   orgIdentifier: GitXOrg
   tags: {}
   stages:
