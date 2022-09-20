@@ -1,0 +1,16 @@
+template:
+  name: Qpipeline
+  identifier: Qpipeline
+  versionLabel: v2
+  type: Pipeline
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: bcv
+          identifier: bcv
+          template:
+            templateRef: Qstage
+            versionLabel: v1
