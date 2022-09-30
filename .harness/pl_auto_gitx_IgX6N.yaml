@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: stage1Updated1
+        name: stage1Updated
         identifier: stage1
         template:
           templateRef: account.StageTemplateForPipelineGithub
