@@ -1,0 +1,24 @@
+pipeline:
+  name: pl_auto_gitx_fFF5W
+  identifier: pl_auto_gitx_fFF5W
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: stage1
+        identifier: stage1
+        template:
+          templateRef: account.StageTemplateForPipelineGithub
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: Q1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
