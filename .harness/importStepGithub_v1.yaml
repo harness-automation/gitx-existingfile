@@ -3,8 +3,8 @@ template:
   identifier: importStepGithub
   versionLabel: v1
   type: Step
-  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  orgIdentifier: Simlified_Git_sync
+#   projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: default #Simlified_Git_sync
   tags: {}
   spec:
     type: HarnessApproval
