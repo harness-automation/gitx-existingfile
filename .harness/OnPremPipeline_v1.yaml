@@ -1,0 +1,27 @@
+template:
+  name: OnPremPipeline
+  identifier: OnPremPipeline
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: W2
+          identifier: W2
+          template:
+            templateRef: OnPremStage
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: Q1
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
