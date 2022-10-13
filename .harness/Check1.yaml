@@ -1,0 +1,27 @@
+pipeline:
+  name: Check1
+  identifier: Check1
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Q1
+        identifier: Q1
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: W1
+                  identifier: W1
+                  template:
+                    templateRef: org.importStepGithub
+                    versionLabel: v1
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
