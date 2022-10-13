@@ -1,0 +1,24 @@
+pipeline:
+  name: PipelineUsingStageTemplateGithub
+  identifier: PipelineUsingStageTemplateGithub
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: W2
+        identifier: W2
+        template:
+          templateRef: StageTemplateGithub
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: Q2
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
