@@ -3,6 +3,7 @@ template:
   identifier: test123
   versionLabel: v1
   type: Step
+  orgIdentifier: Simlified_Git_sync
   tags: {}
   spec:
     type: HarnessApproval
