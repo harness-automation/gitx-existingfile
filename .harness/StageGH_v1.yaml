@@ -1,0 +1,24 @@
+template:
+  name: StageGH
+  identifier: StageGH
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: W1
+              identifier: W1
+              template:
+                templateRef: StepGH
+                versionLabel: v1
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
