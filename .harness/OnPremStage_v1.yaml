@@ -1,0 +1,26 @@
+template:
+  name: OnPremStage
+  identifier: OnPremStage
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              type: HarnessApproval
+              name: Q1
+              identifier: Q1
+              spec:
+                approvalMessage: Please review the following information and approve the pipeline progression
+                includePipelineExecutionHistory: true
+                approvers:
+                  userGroups: <+input>
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                approverInputs: []
+              timeout: 1d
