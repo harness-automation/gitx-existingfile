@@ -1,0 +1,13 @@
+pipeline:
+  name: PipelineUsingStageTemplateGithub
+  identifier: PipelineUsingStageTemplateGithub
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: Amit Singh
+        identifier: S1
+        template:
+          templateRef: StageGH
+          versionLabel: v1
