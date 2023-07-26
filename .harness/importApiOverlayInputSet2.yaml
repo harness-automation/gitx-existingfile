@@ -1,0 +1,10 @@
+overlayInputSet:
+  name: importApiOverlayInputSet2
+  identifier: importApiOverlayInputSet2
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  pipelineIdentifier: importApiAutomationPipeline
+  inputSetReferences:
+    - importApiInputSet2
+    - importApiInputSet3
+  tags: {}
