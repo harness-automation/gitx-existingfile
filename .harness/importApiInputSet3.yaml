@@ -1,0 +1,22 @@
+inputSet:
+  name: importApiInputSet3
+  identifier: importApiInputSet3
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  pipeline:
+    identifier: importApiAutomationPipeline
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo 'inputset three'
