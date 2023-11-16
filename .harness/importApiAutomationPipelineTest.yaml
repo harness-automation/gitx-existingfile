@@ -1,8 +1,8 @@
 pipeline:
-  name: importApiAutomationPipeline
-  identifier: importApiAutomationPipeline
-  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  orgIdentifier: Simlified_Git_sync
+  name: importApiAutomationPipelineTest
+  identifier: importApiAutomationPipelineTest
+  projectIdentifier: AmitTest
+  orgIdentifier: default
   tags: { }
   stages:
       - stage:
