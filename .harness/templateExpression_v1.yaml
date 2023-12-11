@@ -1,0 +1,62 @@
+template:
+  name: templateExpression
+  type: Step
+  projectIdentifier: NGPipeAutoExpressionssHbw0Ef9sL
+  orgIdentifier: Pipelines_NonK8s_Org_NG
+  spec:
+    type: ShellScript
+    when:
+      stageStatus: Success
+      condition: "\"aa\" != \"bb\""
+    timeout: 10m
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: |-
+            set -e
+            assert() {
+             if [ "$1" !=  "$2" ]; then
+               echo "Expression Assertion Failed: $1"
+                exit 1
+             fi
+            }
+
+            assertEither() {
+              if [ "$1" ==  "$2" ] || [ "$1" ==  "$3" ] || [ "$1" ==  "$4" ] || [ "$1" ==  "$5" ] || [ "$1" ==  "$6" ] || [ "$1" == "$7" ] || [ "$1" == "$8" ] || [ "$1" == "$9" ] || [ "$1" == "$10" ] ; then
+                echo "Expression Matched: $1"
+              elif [ "$1" == "test@harness.io" ] ; then
+                echo "Expression Matched: $1 to be test@harness.io"
+              elif [ "$1" == "John Smith" ] ; then
+                echo "Expression Matched: $1 to be John Smith"
+              elif [ "$1" == "pmsuat@harnessioprivate.testinator.com" ] ; then
+                echo "Expression Matched: $1 to be pmsuat@harnessioprivate.testinator.com"
+              elif [ "$1" == "pmsuat" ] ; then
+                echo "Expression Matched: $1 to be pmsuat"
+              elif [ "$1" == "admin_pipeline@harnessioprivate.testinator.com" ] ; then
+                echo "Expression Matched: $1 to be admin_pipeline@harnessioprivate.testinator.com"
+              elif [ "$1" == "pipeline" ] ; then
+                echo "Expression Matched: $1 to be pipeline"     
+              else
+                echo "Expression Assertion Failed: $1"
+                exit 1
+              fi
+            }
+            echo <+pipeline.triggeredBy.email>
+            echo <+pipeline.triggeredBy.name>
+            assert <+pipeline.triggerType> "MANUAL"
+            assertEither "<+pipeline.triggeredBy.email>" "admin@harness.io" "autocdpng@mailinator.com" "automationpipelinesng@mailinator.com" "prodsanitytest@mailinator.com" "prod2sanitytest@mailinator.com" "harnesspie@gmail.com" "pmsprod1@harnessioprivate.testinator.com" "pmsprod3@harnessioprivate.testinator.com" "pmsuat@harnessioprivate.testinator.com" "admin_pipeline@harnessioprivate.testinator.com"
+            assertEither "<+pipeline.triggeredBy.name>" "admin user" "autocdpng" "automationPipelinesNg automation" "prod sanity" "prod2 sanity" "HarnessProd" "pmsprod1" "pmsprod3" "pmsuat" "pipeline"
+      environmentVariables:
+        - name: envVar
+          type: String
+          value: env
+      outputVariables:
+        - name: outVar
+          type: String
+          value: out
+      delegateSelectors: []
+  identifier: templateExpression
+  versionLabel: v1
