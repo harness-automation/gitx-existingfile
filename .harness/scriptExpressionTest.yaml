@@ -98,5 +98,5 @@ pipeline:
           - AllErrors
           action:
             type: StageRollback
-  projectIdentifier: NGPipeAutoExpressionssHbw0Ef9sL
-  orgIdentifier: Pipelines_NonK8s_Org_NG
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
