@@ -1,8 +1,8 @@
 template:
   name: templateExpression
   type: Step
-  projectIdentifier: NGPipeAutoExpressionssHbw0Ef9sL
-  orgIdentifier: Pipelines_NonK8s_Org_NG
+  orgIdentifier: Simlified_Git_sync
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
   spec:
     type: ShellScript
     when:
