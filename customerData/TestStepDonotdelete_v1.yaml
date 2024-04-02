@@ -16,6 +16,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo 'hi'
+          script: echo 'hi update'
       environmentVariables: []
       outputVariables: []
