@@ -1,0 +1,4 @@
+service:
+  name: remoteCacheEntity
+  identifier: remoteCacheEntity
+  orgIdentifier: default
