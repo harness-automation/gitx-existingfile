@@ -1,0 +1,9 @@
+pipeline:
+  name: TestRemotePipeline
+  identifier: TestRemotePipeline
+  tags: {}
+  template:
+    templateRef: testRemotePipelineTemplate
+    versionLabel: v1
+  projectIdentifier: DonotdeleteexistingPipeline
+  orgIdentifier: default
