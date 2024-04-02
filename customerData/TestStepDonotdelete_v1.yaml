@@ -16,6 +16,6 @@ template:
       source:
         type: Inline
         spec:
-          script: echo 'hi update'
+          script: echo 'hi git cache'
       environmentVariables: []
       outputVariables: []
