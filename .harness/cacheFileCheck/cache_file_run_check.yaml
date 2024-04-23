@@ -1,0 +1,30 @@
+pipeline:
+  name: cache_file_run_check
+  identifier: cache_file_run_check
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: { }
+  stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: Shell Script_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      onDelegate: true
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo 'hi'
+                      environmentVariables: [ ]
+                      outputVariables: [ ]
+                    timeout: 1m
+          tags: { }
