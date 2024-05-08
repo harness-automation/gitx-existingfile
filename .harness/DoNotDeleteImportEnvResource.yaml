@@ -1,0 +1,6 @@
+environment:
+  name: DoNotDeleteImportEnvResource
+  identifier: DoNotDeleteImportEnvResource
+  description: ""
+  tags: {}
+  type: Production
