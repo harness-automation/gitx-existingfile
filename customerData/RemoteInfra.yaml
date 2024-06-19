@@ -1,6 +1,0 @@
-environment:
-  name: RemoteInfra
-  identifier: RemoteInfra
-  accountId: 6dPIY0B4S96mB_ivo57p9Q
-  orgIdentifier: default
-  type: PreProduction
