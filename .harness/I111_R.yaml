@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: I111_R
+  identifier: I111_R
+  orgIdentifier: default
+  projectIdentifier: Shylaja_Test
+  environmentRef: E_R_1
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.cdngqatargetcluster
+    namespace: <+input>
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
