@@ -1,0 +1,27 @@
+template:
+  name: efcdecd2
+  projectIdentifier: DoNotDelete_OpenApi2
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  identifier: efcdecd2
+  versionLabel: v1
+  type: Stage
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ss1
+              identifier: ss1
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: exit 1
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
